@@ -26,6 +26,7 @@ public class MainActivity extends ActionBarActivity {
         someTextView.setTypeface(mainFont);
 
         startActivity(new Intent(MainActivity.this, OnBoardingActivity.class));
+        finish();
     }
 
     @Override

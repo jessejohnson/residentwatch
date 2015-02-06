@@ -59,7 +59,7 @@ public class TypeListItemAdapter extends RecyclerView.Adapter<TypeListItemAdapte
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(itemView.getContext(), ReportActivity.class);
-//            intent.putExtra("name", typeName.getText().toString());
+            intent.putExtra("name", typeName.getText().toString());
             itemView.getContext().startActivity(intent);
         }
     }

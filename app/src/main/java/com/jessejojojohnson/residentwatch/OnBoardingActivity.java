@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class OnBoardingActivity extends FragmentActivity {
 
-    private static final int NUM_PAGES = 3;
+    private static final int NUM_PAGES = 1;
     private ViewPager mPager;
     private PagerAdapter mPagerAdapter;
 
@@ -37,14 +37,14 @@ public class OnBoardingActivity extends FragmentActivity {
 
         private ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
-            textHeadings.add("Heading Text 1");
+            textHeadings.add("Make A Difference");
             textHeadings.add("Heading Text 2");
             textHeadings.add("Heading Text 3");
             textHeadings.add("Heading Text 4");
             textHeadings.add("Heading Text 5");
 
-            textContent.add("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n" +
-                    "tempor incididunt ut labore et dolore magna aliqua.");
+            textContent.add("Take the initiative and report problems in your community to the relevant authorities\n" +
+                    "All it takes is a click to get vigilant.");
             textContent.add("Ut enim ad minim veniam,\n" +
                     "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n" +
                     "consequat.");
@@ -81,8 +81,13 @@ public class OnBoardingActivity extends FragmentActivity {
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        finish();
+    }
 
-//    @Override
+    //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        // Inflate the menu; this adds items to the action bar if it is present.
 //        getMenuInflater().inflate(R.menu.menu_on_boarding, menu);

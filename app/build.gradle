@@ -28,4 +28,5 @@ dependencies {
     compile 'jp.wasabeef:recyclerview-animators:1.0.3@aar'
     compile 'io.nlopez.smartlocation:library:3.0.2'
     compile 'com.loopj.android:android-async-http:1.4.6'
+    compile 'com.koushikdutta.ion:ion:2.+'
 }
