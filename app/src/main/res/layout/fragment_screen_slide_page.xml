@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/street"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/slideHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_head"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/slideText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_sub"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/getstarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Here"
+        android:layout_gravity="bottom"
+        android:background="#1E88E5"
+        android:textColor="#FFFFFF"/>
+
+    <!--<com.gc.materialdesign.views.ButtonRectangle-->
+        <!--android:id="@+id/getstarted"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Start Here"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="#1E88E5"-->
+        <!--android:textColor="#FFFFFF"/>-->
+</FrameLayout>
