@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.gc.materialdesign.views.ButtonRectangle;
 import com.jessejojojohnson.residentwatch.R;
 import com.jessejojojohnson.residentwatch.SelectTypeActivity;
@@ -49,9 +51,22 @@ public class OnboardingFragment extends Fragment {
         textViewHeading.setTypeface(mainFont);
         textView.setTypeface(mainFont);
 
+        YoYo.with(Techniques.SlideInUp)
+                .duration(1000)
+                .playOn(textViewHeading);
+        YoYo.with(Techniques.SlideInUp)
+//                .delay(500)
+                .duration(2000)
+                .playOn(textView);
+
         if(icicle.getBoolean("button")){
 //            ButtonRectangle getStarted = (ButtonRectangle) rootView.findViewById(R.id.getstarted);
             Button getStarted = (Button) rootView.findViewById(R.id.getstarted);
+
+            YoYo.with(Techniques.Shake)
+                    .duration(1000)
+                    .playOn(getStarted);
+
             getStarted.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

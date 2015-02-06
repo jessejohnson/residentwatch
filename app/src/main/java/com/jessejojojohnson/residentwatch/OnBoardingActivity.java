@@ -48,14 +48,6 @@ public class OnBoardingActivity extends FragmentActivity {
             textContent.add("Ut enim ad minim veniam,\n" +
                     "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n" +
                     "consequat.");
-            textContent.add("Duis aute irure dolor in reprehenderit in voluptate velit esse\n" +
-                    "cillum dolore eu fugiat nulla pariatur.");
-            textContent.add("Excepteur sint occaecat cupidatat non\n" +
-                    "proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
-            textContent.add(" Ut enim ad minim veniam,\n" +
-                    "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n" +
-                    "consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n" +
-                    "cillum dolore eu fugiat nulla pariatur.");
         }
 
         @Override
@@ -85,6 +77,12 @@ public class OnBoardingActivity extends FragmentActivity {
     protected void onDestroy() {
         super.onDestroy();
         finish();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
     }
 
     //    @Override

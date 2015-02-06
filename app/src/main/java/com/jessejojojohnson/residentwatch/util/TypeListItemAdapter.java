@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.daimajia.androidanimations.library.YoYo;
 import com.jessejojojohnson.residentwatch.R;
 import com.jessejojojohnson.residentwatch.ReportActivity;
 
@@ -55,6 +56,8 @@ public class TypeListItemAdapter extends RecyclerView.Adapter<TypeListItemAdapte
             typeName.setTypeface(mainFont);
             itemView.setOnClickListener(this);
         }
+
+
 
         @Override
         public void onClick(View v) {
