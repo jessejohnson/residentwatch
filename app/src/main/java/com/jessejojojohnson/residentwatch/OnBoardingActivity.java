@@ -74,12 +74,6 @@ public class OnBoardingActivity extends FragmentActivity {
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        finish();
-    }
-
-    @Override
     protected void onPause() {
         super.onPause();
         overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);

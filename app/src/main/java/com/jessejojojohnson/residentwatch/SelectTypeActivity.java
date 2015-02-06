@@ -55,6 +55,7 @@ public class SelectTypeActivity extends ActionBarActivity {
         listItems.add(new TypeListItem("Illegal Connections"));
         listItems.add(new TypeListItem("Broken Pipes"));
         listItems.add(new TypeListItem("Potholes"));
+        listItems.add(new TypeListItem("Open Drains"));
 
         TypeListItemAdapter adapter = new TypeListItemAdapter(listItems);
 
@@ -64,7 +65,7 @@ public class SelectTypeActivity extends ActionBarActivity {
     @Override
     protected void onPause() {
         super.onPause();
-//        timer.cancel();
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
     }
 
     @Override
